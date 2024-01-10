@@ -12,6 +12,16 @@ body {
   padding: 60px;
 }
 
+.emoji-temperature-degree {
+  font-weight: 900;
+  font-size: 60px;
+  text-align: center;
+  border-bottom: 1px solid white;
+  padding: 0 0 40px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
 .search-form-input {
   background-color: #e0f2ff;
   font-size: 15px;
@@ -28,4 +38,14 @@ body {
   border-radius: 5px;
   width: 20%;
   color: white;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 50px;
+  text-align: center;
+}
+
+a {
+  color: #00b3fb;
 }
