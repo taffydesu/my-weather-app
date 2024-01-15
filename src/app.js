@@ -7,7 +7,9 @@ function refreshWeather(response) {
   let windELement = document.querySelector("#wind");
   let dateELement = document.querySelector("#date-today");
   let date = new Date(response.data.time * 1000);
+  let iconElement = document.querySelector("#emoji");
 
+  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon" />`;
   cityElement.innerHTML = response.data.city;
   dateELement.innerHTML = formatDate(date);
   descriptionElement.innerHTML = response.data.condition.description;
@@ -22,12 +24,11 @@ function formatDate(date) {
   let dateToday = date.getDate();
   let year = date.getFullYear();
   let minutes = date.getMinutes();
-  let hours = date.getHours();
-
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
 
+  let hours = date.getHours();
   if (hours < 10) {
     hours = `0${hours}`;
   }

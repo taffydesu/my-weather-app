@@ -25,10 +25,11 @@ body {
 }
 
 .emoji {
-  font-size: 200px;
   position: relative;
-  left: 220px;
-  bottom: 30px;
+  left: 270px;
+  bottom: -30px;
+  width: 200px;
+  height: 200px;
 }
 
 .temperature {
