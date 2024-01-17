@@ -14,12 +14,14 @@
 </head>
   <body>
     <div class="weather-app-box">
-    <div class="date-today" id="date-today">
+    <div class="date-emoji-temperature">
+      <div class="date-today" id="date-today">
     </div> 
     <div class="emoji-temperature-degree">
       <div class="emoji" id="emoji"></div>
       <div class="temperature" id="temperature">12</div> 
       <div class="degree">°C</div>
+    </div>
     </div>
     <form class="search-form" id="search-form">
       <input
@@ -34,20 +36,10 @@
       <input type="submit" value="Search 🔎" class="search-form-button"/>
     </form>
     <h1 id="city-name">Tokyo</h1>
-    <p><span id="description"></span>
+    <p><span class="weather-forecast-condition" id="description"></span>
     </br>
     Humidity: <strong><span id="humidity"></span>%</strong> Wind: <strong><span id="wind"></span> km/h</strong></p>
-    <div class="weather-forecast">
-      <div class="row"> 
-        <div class="col-3">
-          Sunny
-          </br>
-          <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png" alt="" wifth="10"/>
-        </br>
-        18° C/F Thu
-        </div>
-      </div>
-    </div>
+    <div class="weather-forecast" id="forecast"></div>
   </br>
     <footer
       >Coded by
