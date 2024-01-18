@@ -89,6 +89,7 @@ strong {
 .icon {
   margin-top: 0px;
   padding-top: 0px;
+  width: 90px;
 }
 
 .weather-forecast-condition {
@@ -99,6 +100,7 @@ strong {
 footer {
   text-align: center;
   color: rgba(0, 0, 0, 0.4);
+  margin-top: 10px;
   margin-bottom: 30px;
 }
 
