@@ -108,11 +108,8 @@ function displayForecast(response) {
       forecastHtml =
         forecastHtml +
         `
-        <div class="weather-forecast-days">
-           <div class="weather-forecast-date-today">
-            <span class="weather-forecast-day">${formatDay(
-              day.time
-            )}</span></div>
+        <div class="weather-forecast-today">
+            <span class="weather-forecast-day">${formatDay(day.time)}</span>
           <img src="${day.condition.icon_url}" class="icon"/>
         <div class="weather-forecast-temperature">
           <span class="weather-forecast-max">${Math.round(
