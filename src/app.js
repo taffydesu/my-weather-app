@@ -16,6 +16,8 @@ function refreshWeather(response) {
   humidityElement.innerHTML = response.data.temperature.humidity;
   windELement.innerHTML = response.data.wind.speed;
   temperatureElement.innerHTML = Math.round(temperature);
+
+  getForecast(response.data.city);
 }
 
 function formatDate(date) {
@@ -77,6 +79,12 @@ function citySearchSubmit(event) {
   searchCity(searchInput.value);
 }
 
+function getForecast(city) {
+  let apiKey = "b800f3t5c5a32643644fbd333b098o7b";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
+  axios(apiUrl).then(displayForecast);
+}
+
 function displayForecast() {
   let forecastElement = document.querySelector("#forecast");
 
@@ -106,4 +114,3 @@ let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", citySearchSubmit);
 
 searchCity("Tokyo");
-displayForecast();
