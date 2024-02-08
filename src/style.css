@@ -9,41 +9,40 @@ body {
   margin: 0px auto;
   box-shadow: 0 30px 50px rgba(32, 32, 35 0.5);
   border-radius: 16px;
+  padding: 20px;
 }
 
 .date-emoji-temperature {
-  display: flex;
-  justify-content: space-between;
+  padding-bottom: 50px;
 }
 
 .date-today {
   font-size: 20px;
   position: relative;
-  top: 130px;
+  top: 80px;
 }
 
 .emoji-temperature-degree {
   font-weight: 900;
+  display: flex;
 }
 
 .emoji {
   position: relative;
-  right: 290px;
-  top: 90px;
-  max-width: 100px;
+  left: 270px;
+  width: 200px;
 }
 
 .temperature {
   font-size: 80px;
   position: relative;
-  right: 100px;
+  left: 280px;
 }
 
 .degree {
   font-size: 80px;
   position: relative;
-  right: 50px;
-  bottom: 100px;
+  left: 280px;
 }
 
 .search-form-input {
